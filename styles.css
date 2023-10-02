@@ -40,6 +40,7 @@
 .qr{
   width: 150px;
   height: 150px;
+  border: 10px solid #ffffff;
 }
 .btn {
   padding: 1rem 2rem;
@@ -64,6 +65,9 @@ img {
 
 a {
   text-decoration: none;
+}
+strong{
+  color: #0091D0;
 }
 
 .bg__blur {
