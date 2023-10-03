@@ -38,9 +38,43 @@
   color: var(--text-light);
 }
 .qr{
+  width: 100px;
+  height: 100px;
+  border: 10px solid #ffffff;
+}
+.container-yape{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 63vh;
+  justify-content: center;
+  align-items: center;
+}
+.container-yape div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  grid-gap:10px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  height: 250px;
+  width: 400px;
+  border-radius: 10px;
+}
+.container-yape .ap{
+  background-color: var(--primary-color-light);
+  font-weight: bold;
+  color: var(--text-light);
+  width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+.yape{
   width: 150px;
   height: 150px;
-  border: 10px solid #ffffff;
+  /* border: 10px solid #ffffff; */
 }
 .btn {
   padding: 1rem 2rem;
@@ -156,7 +190,6 @@ nav {
   font-weight: 600;
   color: var(--secondary-color);
 }
-
 .header__content h1 {
   margin-bottom: 1rem;
   font-size: 5rem;
@@ -164,6 +197,14 @@ nav {
   line-height: 6rem;
   color: var(--white);
 }
+.container-yape h1 {
+  margin-bottom: 1rem;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 6rem;
+  color: var(--white);
+}
+
 
 .header__content h1 span {
   -webkit-text-fill-color: transparent;
@@ -864,6 +905,18 @@ nav {
   .navigation .menu-icon{
     display: block;
   }
+  .fix-icon .menu-icon{
+    position: fixed;
+    left: 193px;
+    top: 50px;
+    background-color: #1c1f25;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .menu li a:hover{
     font-size: 1.6rem;
   }
