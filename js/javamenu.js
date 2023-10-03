@@ -1,14 +1,3 @@
-/*==scroll-progress-bar======================*/
-let scrollPrecentage = () =>{
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  let scrollValue = Math.round(pos * 100 / calcHeight);
-  scrollProgress.style.background = `conic-gradient(#0AA2C0 ${scrollValue}%, #2b2f38 ${scrollValue}%)`;
-}
-window.onscroll = scrollPrecentage;
-window.onload = scrollPrecentage;
 /*Initialize Swiper*/
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
